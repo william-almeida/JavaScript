@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        body{
+            font: 12pt Arial;
+            text-align: center;
+        }
+        button{
+            margin: 25px 0;
+            padding: 20px 40px;
+            font-weight: 600;
+        }
+        button:hover{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Trabalhando com dados v2.0</h1>
+
+    <button onclick="start()" >Clique para começar</button>
+
+    <section id="result">
+        <p>O resultado vai aparecer aqui.</p>
+    </section>
+
+    <script>
+
+        function start() {
+            let name = window.prompt("Qual seu nome?")
+            let res = window.document.getElementById('result')
+            res.innerHTML = `<p> Olá, <strong>${name}</strong>! É um grande prazer te conhecer! &#x1F596`
+ 
+        }
+
+    </script>
+    
+</body>
+</html>
