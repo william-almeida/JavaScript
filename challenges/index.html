@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: content-box;
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            font: 14pt Arial;
+            background-color: #7ecff1;
+        }
+        #container{
+            margin: auto;
+            height: 100vh;
+            width: 90vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        #buttons{
+            margin-top: 30px;
+        }
+        .button{
+            font-weight: 600;
+            color: #000000;
+            padding: 20px 20px;
+            margin: 0 4px;
+        }
+        .button:hover{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Desafio das mensagens</h1>
+        <div id="buttons">
+            <button class="button" onclick="button1()">Botão 1</button>
+            <button class="button" onclick="button2()">Botão 2</button>
+            <button class="button" onclick="button3()">Botão 3</button>
+        </div>
+    </div>
+
+    <script>
+        function button1(){
+            window.alert("Você clicou no bottão 1")
+        }
+
+        function button2(){
+            window.alert("Você clicou no bottão 2")
+        }
+
+        function button3(){
+            window.alert("Você clicou no bottão 3")
+        }
+    </script>
+</body>
+</html>
