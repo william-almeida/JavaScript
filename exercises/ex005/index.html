@@ -15,6 +15,7 @@
             /* text-align: center; */
         }
         button{
+            margin: 20px 0;
             font-weight: 600;
             padding: 10px;
         }
@@ -23,6 +24,19 @@
 <body>
     <h1>Trabalhando com números</h1>
     <button onclick="calculate()">Clique para Calcular</button>
+    <section id="result">
+        <p>O resultado vem aqui..</p>
+    </section>
+
+    <script>
+
+        function calculate() {            
+            let num = window.prompt("Digite um número:")
+            let res = window.document.getElementById('result')
+            res.innerHTML = `<p>O dobro de ${num} é ${num*2} e a metade é ${num/2}!</p>`
+        }
+
+    </script>
     
 </body>
 </html>
