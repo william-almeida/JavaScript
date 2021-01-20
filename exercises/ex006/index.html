@@ -37,9 +37,11 @@
 
         
 
-        function calculate() {            
-            let num1 = window.prompt("Digite um número:")
-            let num2 = window.prompt("Digite um número:")
+        function calculate() {
+
+            let num1 = window.parseInt(prompt("Digite um número:"))
+            let num2 = window.parseInt(prompt("Digite outro número:"))
+            
 
             let res = window.document.getElementById('result')
             res.innerHTML = `<p>A soma de ${num1} e ${num2} é: <strong>${num1+num2}</strong></p>`
