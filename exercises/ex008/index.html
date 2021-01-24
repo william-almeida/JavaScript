@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercício 08</title>
+    <style>
+        body{
+            background-color: #f7e018;
+            width: 90vw;
+            height: 90vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font: 14pt Arial;
+            /* text-align: center; */
+        }
+        button{
+            margin: 20px 0;
+            font-weight: 600;
+            padding: 10px;
+        }
+        #result{
+            padding: 10px 20px;
+            border-radius: 2px;
+            border: 2px solid #000;
+        }
+        hr{
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+    <h1>Vários cálculos em JS</h1>
+
+    <button onclick="calculate()" >Clique para calcular</button>
+
+    <div id="result">
+        <p>aqui vem o resultado</p>
+        
+        
+
+    </div>
+
+    <script>
+        
+        
+        function calculate() {
+            let num = window.prompt("Digite um número:")
+            let res = document.getElementById('result')
+            
+            res.innerHTML =`<h3>O número a ser analisado aqui será o <strong>${num}</strong></h3>`
+            res.innerHTML +=`<p> O seu valor absoluto é ${Math.abs(num)}</p>`
+            res.innerHTML +=`<p>A sua parte inteira é ${Math.trunc(num)}</p>`
+            res.innerHTML +=`<p>O valor inteiro mais próximo é ${Math.round(num)}</p>`
+            res.innerHTML +=`<p>A sua raiz quadrada é ${Math.sqrt(num)}</p>`
+            res.innerHTML +=`<p>A sua raiz cúbica é ${Math.cbrt(num)}</p>`
+            res.innerHTML +=`<p>O valor de ${num}<sup>2</sup> é ${Math.pow(num, 2)}</p>`
+            res.innerHTML +=`<p>O valor de ${num}<sup>3</sup> é ${Math.pow(num, 3)}</p>`
+            
+        }
+    </script>
+
+</body>
+</html>
