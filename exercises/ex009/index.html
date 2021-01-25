@@ -5,8 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../main.css">
+    <style>
+        #buttons{
+            width: 500px;
+            display: flex;
+            justify-content: space-around;
+        }
+        #buttons button{
+            width: 200px;
+        }
+    </style>
 </head>
 <body>
-    
+    <div id="container">
+        <h1>Contador de cliques</h1>
+        <div id="buttons">
+            <button onclick="plus(1)">Clique aqui</button>
+            <button onclick="plus(0)">Zerar contador</button>
+        </div>
+        <div id="result">
+            <p>Total de cliques: 0</p>
+        </div>
+    </div>
+    <script>
+        var click_num = 0
+        function plus(click) {
+            click_num += 1
+            click_num *= click
+            let res = document.getElementById('result')
+            res.innerHTML = `<p>Total de cliques: ${click_num}</p>`
+        }
+    </script>
 </body>
 </html>
