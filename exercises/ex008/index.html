@@ -3,48 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <title>Exercício 08</title>
+    <link rel="stylesheet" href="../main.css">
     <style>
-        body{
-            background-color: #f7e018;
-            width: 90vw;
-            height: 90vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            font: 14pt Arial;
-            /* text-align: center; */
-        }
-        button{
-            margin: 20px 0;
-            font-weight: 600;
-            padding: 10px;
-        }
-        #result{
-            padding: 10px 20px;
-            border-radius: 2px;
-            border: 2px solid #000;
-        }
-        hr{
-            color: #000;
+        #result h3{
+            display: block;
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+            border-bottom: 2px dashed #f7e018;;
         }
     </style>
 </head>
 <body>
-    <h1>Vários cálculos em JS</h1>
-
-    <button onclick="calculate()" >Clique para calcular</button>
-
-    <div id="result">
-        <p>aqui vem o resultado</p>
-        
-        
-
+    <div id="container">
+        <h1>Vários cálculos em JS</h1>
+        <button onclick="calculate()" >Clique para calcular</button>
+        <div id="result">
+            <p>aqui vem o resultado</p>
+        </div>
     </div>
 
-    <script>
-        
-        
+    <script>               
         function calculate() {
             let num = window.prompt("Digite um número:")
             let res = document.getElementById('result')
@@ -56,8 +34,7 @@
             res.innerHTML +=`<p>A sua raiz quadrada é ${Math.sqrt(num)}</p>`
             res.innerHTML +=`<p>A sua raiz cúbica é ${Math.cbrt(num)}</p>`
             res.innerHTML +=`<p>O valor de ${num}<sup>2</sup> é ${Math.pow(num, 2)}</p>`
-            res.innerHTML +=`<p>O valor de ${num}<sup>3</sup> é ${Math.pow(num, 3)}</p>`
-            
+            res.innerHTML +=`<p>O valor de ${num}<sup>3</sup> é ${Math.pow(num, 3)}</p>`            
         }
     </script>
 

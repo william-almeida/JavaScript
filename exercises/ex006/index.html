@@ -3,50 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <title>Exercício 06</title>
-    <style>
-        body{
-            width: 90vw;
-            height: 90vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            font: 12pt Arial;
-            /* text-align: center; */
-        }
-        button{
-            margin: 20px 0;
-            font-weight: 600;
-            padding: 10px;
-        }
-        #result{
-            padding: 10px 20px;
-            border-radius: 5px;
-            background-color: rgb(90, 177, 235);
-        }
-    </style>
+    <link rel="stylesheet" href="../main.css">
 </head>
 <body>
-    <h1>Somando dois números</h1>
-    <button onclick="calculate()">Iniciar a soma</button>
-    <section id="result">
-        <p>O resultado vem aqui..</p>
-    </section>
+    
+    <div id="container">
+        <h1>Somando dois números</h1>
+        <button onclick="calculate()">Iniciar a soma</button>
+        <section id="result">
+            <p>O resultado vem aqui..</p>
+        </section>
+    </div>
 
     <script>
-
-        
-
         function calculate() {
-
             let num1 = window.parseInt(prompt("Digite um número:"))
             let num2 = window.parseInt(prompt("Digite outro número:"))
-            
-
             let res = window.document.getElementById('result')
             res.innerHTML = `<p>A soma de ${num1} e ${num2} é: <strong>${num1+num2}</strong></p>`
         }
-
     </script>
     
 </body>

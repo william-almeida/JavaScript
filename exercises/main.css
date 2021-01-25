@@ -1,0 +1,35 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #f7e018;
+    font: 14pt Arial;
+    /* text-align: center; */
+}
+#container{
+    width: 90vw;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+button{
+    margin: 20px 0;
+    font-weight: 600;
+    padding: 10px;
+}
+button:hover{
+    cursor: pointer;
+}
+#result{
+    font: 500 14pt Monospace;
+    background-color: #000;
+    color: #f3e13c;
+    border: 2px solid #000;
+    padding: 20px;
+    border-radius: 4px;
+}

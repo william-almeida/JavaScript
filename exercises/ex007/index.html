@@ -3,36 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>Exercício 07</title>
-    <style>
-        body{
-            width: 90vw;
-            height: 90vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            font: 12pt Arial;
-            /* text-align: center; */
-        }
-        button{
-            margin: 20px 0;
-            font-weight: 600;
-            padding: 10px;
-        }
-        #result{
-            padding: 10px 20px;
-            border-radius: 5px;
-            background-color: #6b6e70;
-            color: #ffffff;
-        }
-    </style>
+    <link rel="stylesheet" href="../main.css">
 </head>
 <body>
-    <h1>Média do aluno v1.0</h1>
-    <button onclick="average()">Calcular média</button>
-    <section id="result">
-        <p>O resultado vem aqui..</p>
-    </section>
+    <div id="container">
+        <h1>Média do aluno v1.0</h1>
+        <button onclick="average()">Calcular média</button>
+        <section id="result">
+            <p>O resultado vem aqui..</p>
+        </section>
+    </div>
 
     <script>
         function average(params) {
