@@ -18,7 +18,7 @@ body{
 }
 
 a{
-    color: #04d361;
+    color: #f2d432;
     text-decoration: none;
 }
 a:hover{
@@ -31,9 +31,12 @@ header{
     padding-bottom: 30px;
     margin-bottom: 20px;
     border-bottom: solid 1px #666666;
+
+    display: flex;
+    justify-content: space-between;
 }
 header h1{
-    color: #04d361;
+    color: #f2d432;
 }
 
 
@@ -57,10 +60,13 @@ header h1{
     justify-content: space-around;
 }
 
-footer{
-    text-align: center;
-    width: 100%;
-    padding-top: 20px;
-    margin-top: 30px;
-    border-top: solid 1px #666666;
+.container  .list div h2 {
+    margin-bottom: 10px;
+
+}
+.container  .list div ol{
+    padding-left: 25px;
+}
+.container  .list div {
+    padding-right: 20px;
 }
