@@ -5,11 +5,15 @@
 *Fonte das aulas e exercícios: [Rocketseart](https://rocketseat.com.br/) e [Curso em Video](https://gustavoguanabara.github.io/)*
 
 ## Conceitos Aprendidos
-- dados primitivos
+- Dados primitivos
     - manipulação de dados
         - typeof mydata
         - string to number
         - data.lengh
+- Variáveis
+    - declaração e nomeclatura
+    - var, const, let
+    - escopo e hoisting
 - DOM
     - alert(), confirm(), confirm()
     - getElementById("ok")
