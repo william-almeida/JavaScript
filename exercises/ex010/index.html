@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 10</title>
+
+    <link rel="shortcut icon" href="/fav.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../main.css">
+    <style>
+        #interaction{
+           display: flex;
+           flex-direction: column;
+        }
+        input{
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Casas decimais</h1>
+        <div id="interaction">
+
+            <label for="number">Inisira o número fracionário que você deseja arredodar</label>
+            <input name="number" id="number" type="text" placeholder="Inisira o número fracionário.">
+
+            <label for="digits">Em quantas casas você deseja arrendondar?</label>
+            <input name="digits" id="digits" type="text" placeholder="número de casas" >
+            
+
+            <button onclick="round()">Arredondar</button>
+        </div>
+        <div id="result">
+            <p>resusl</p>
+        </div>
+    </div>
+    <script>
+        function round() {
+            // div result
+            let result = document.getElementById('result')
+
+            // get  number
+            let number = document.getElementById('number').value
+            number = Number(number)
+
+            // get decimals digits
+            let digits = document.getElementById('digits').value
+            digits = Number(digits)
+
+            result.innerHTML = `<p> ${number.toFixed(digits)} <p>`
+
+        }
+        
+    </script>
+</body>
+</html>

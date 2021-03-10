@@ -17,6 +17,11 @@ body{
     align-items: center;
     margin: auto;
 }
+
+h1{
+    margin-bottom: 20px;
+}
+
 button{
     margin: 20px 0;
     font-weight: 600;
