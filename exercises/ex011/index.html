@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -53,8 +53,9 @@
             // get word
             let word = document.getElementById('word').value
 
-            let hasWord = text.includes(word)
-            console.log(hasWord)
+            // to lower case - garantindo que as palvras
+            // capitalizadas possam ser encrontradas
+            let hasWord = text.toLowerCase().includes(word.toLowerCase())
 
             result.innerHTML = (
                 hasWord ?
