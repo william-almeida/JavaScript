@@ -9,7 +9,9 @@
     - manipulação de dados
         - typeof mydata
         - string to number
-        - data.lengh
+        - *data*.lengh
+        - *number*.toFixed()
+        - *string*.includes()
 - Variáveis
     - declaração e nomeclatura
     - var, const, let
