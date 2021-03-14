@@ -5,7 +5,7 @@ const result = document.querySelector('div#result')
 const bgColor = document.body
 
 const currentDate = new Date()
-const currentHour = currentDate.getHours()
+const currentHour = 8 //currentDate.getHours()
 
 function settings(){
   if (currentHour >= 6 && currentHour < 12) {
@@ -30,7 +30,7 @@ function settings(){
     bgColor.style.background = "#f8b350"
     section.style.background = "#ffffff"
     // load img
-    img.src= './images/afternoon.jpg'
+    img.src= './images/night.jpg'
     // html
   }
 }
