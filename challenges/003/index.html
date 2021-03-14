@@ -7,7 +7,7 @@
     <link rel="shortcut icon" href="/fav.ico" type="image/x-icon">
     <title>Document</title>
 </head>
-<body onload="test()">
+<body >
     <div class="container">
         <header>
             <h1>Hora do Dia</h1>
@@ -17,31 +17,11 @@
                 
             </div>
             <div>
-                <img src="./default.jpg" id="currentHourImage">
+                <img src="./images/default.jpg" id="currentHourImage">
             </div>
         </section>
     </div>
-    <script>
-
-        const result = document.querySelector('section.result')
-        const img = document.querySelector('img#currentHourImage')
-
-        const currentDate = new Date()
-        const currentHour = currentDate.getHours()
-        function test(){
-            var  period = null
-            if (currentHour >= 6 && currentHour < 12) {
-                // morgning - manhã
-                img.src= './morning.jpg'
-            } else if (currentHour >= 12 && currentHour < 18) {
-                // afternoon
-                img.src= './afternoon.jpg'
-            } else if (currentHour >= 18 && currentHour < 0) {
-                img.src= './night.jpg'
-            }
-            
-        }
-        test()
+    <script src="script.js">
     </script>
 </body>
 </html>
