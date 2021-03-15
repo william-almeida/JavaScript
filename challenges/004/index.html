@@ -10,20 +10,23 @@
 </head>
 <body >
     <div class="container">
-        <form onsubmit="loadPhoto()">
+        <form>
             <label for="birth-year">Em que ano você nasceu?</label>
             <input type="text" id="birth-year"><br>
 
-            <input type="radio" id="male" name="gender" value="male">
+            <input type="radio" id="male" name="gender" value="male" checked>
             <label for="male">Male</label>
 
             <input type="radio" id="female" name="gender" value="female">
             <label for="female">Female</label><br>
 
-            <button type="submit">
+            <button type="button" onclick="loadPhoto()">
                 carregar imagem
             </button>
         </form>
+        <div id="photo">
+            <img alt="Imagem padrão" id="profile">
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
