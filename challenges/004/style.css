@@ -20,7 +20,7 @@ body {
   flex-direction: column;
 }
 .container  {
-  height: 80%;
+  height: 90%;
   width: 50%;
 
   border-radius: 10px;
@@ -31,20 +31,52 @@ body {
   align-items: center;
   flex-direction: column;
 }
-.container form {
-  margin-bottom: 20px;
+
+.container #inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 25px 0;
+  cursor: pointer ;
 }
+
+#inputs div:first-child {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* #config{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+} */
+
 input#birth-year, button {
   padding: 0;
   border: none;
   border-radius: 5px;
-  height: 30px;
+  font-size: 12pt;
+  height: 40px;
+  width: 250px;
+  margin: 15px auto;
   background-color: #121214;
   color: #fff;
-  width: 80%;
 }
 
-.container div {
+#inputs button{
+  background-color: #8257e6;
+}
+
+#inputs button:hover{
+  background-color: #9466ff;
+  transition: 300ms;
+}
+
+body .container div#photo {
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -55,6 +87,14 @@ input#birth-year, button {
 .container div img {
   height: 300px;
   width: 300px;
+  border-radius: 50%;
+  border: solid 8px #8257e6;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.4);
+  transition: 300ms;
+}
+.container div img:hover {
+  border: solid 5px #9466ff;
+
 }
 
 @media (max-width: 600px){

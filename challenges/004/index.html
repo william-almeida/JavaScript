@@ -10,20 +10,24 @@
 </head>
 <body >
     <div class="container">
-        <form>
-            <label for="birth-year">Em que ano você nasceu?</label>
-            <input type="text" id="birth-year"><br>
-
-            <input type="radio" id="male" name="gender" value="male" checked>
-            <label for="male">Male</label>
-
-            <input type="radio" id="female" name="gender" value="female">
-            <label for="female">Female</label><br>
+        <div id="inputs">
+            <div>
+                <label for="birth-year">Em que ano você nasceu?</label>
+                <input type="text" id="birth-year"><br>
+            </div>
+            
+            <div>
+                <input type="radio" id="male" name="gender" value="male" checked>
+                <label for="male">Male</label>
+    
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label><br>
+            </div>
 
             <button type="button" onclick="loadPhoto()">
                 carregar imagem
             </button>
-        </form>
+        </div>
         <div id="photo">
             <p>Preencha os dados para ver o resultado</p>
             <img src="./images/default.webp" alt="Imagem padrão" id="profile">
