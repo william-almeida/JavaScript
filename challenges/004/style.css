@@ -48,6 +48,18 @@ body {
   justify-content: center;
 }
 
+#inputs div#radios {
+  width: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#inputs div#radios div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
 /* #config{
   display: flex;
   flex-direction: column;
@@ -80,6 +92,7 @@ body .container div#photo {
   height: 100%;
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: space-around;
 }
 
@@ -97,6 +110,16 @@ body .container div#photo {
 
 }
 
-@media (max-width: 600px){
-  /* askdjaksjd */
+@media (max-width: 700px){
+  body {
+    font-size: 12pt;
+  }
+  .container{
+    height: 80%;
+    width: 80%;
+  }
+  .container div img {
+    height: 200px;
+    width: 200px;
+  }
 }
