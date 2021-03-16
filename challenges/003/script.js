@@ -5,13 +5,14 @@ const result = document.querySelector('div#result')
 const bodyColor = document.body
 
 const currentDate = new Date()
-const currentHour = 15 //currentDate.getHours()
+const currentHour =  20 //currentDate.getHours()
 
 function settings(){
-  if (currentHour >= 6 && currentHour < 12) {
+  if (currentHour > 0 && currentHour < 12) {
     // set css
     bodyColor.style.background = "#bdbdbf"
     section.style.background = "#ffffff"
+    section.style.color = "#000000"
     // load img
     img.src= './images/morning.jpg'
     // html
