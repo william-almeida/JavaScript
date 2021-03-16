@@ -5,7 +5,7 @@ const result = document.querySelector('div#result')
 const bodyColor = document.body
 
 const currentDate = new Date()
-const currentHour =  20 //currentDate.getHours()
+const currentHour = currentDate.getHours()
 
 function settings(){
   if (currentHour > 0 && currentHour < 12) {
